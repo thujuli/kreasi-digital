@@ -82,3 +82,30 @@ export const projectsList = [
     link: "https://google.com",
   },
 ];
+
+export const testimonialsList = [
+  {
+    ratings: 4,
+    clientTestimonial:
+      "Our company is a very professional company, with friendly service, modern homes and interest-free payments",
+    clientName: "Purwa Adi Wicaksana",
+    clientImgUrl: "/images/client-01.jpg",
+    clientPosition: "UI/UX Designer",
+  },
+  {
+    ratings: 5,
+    clientTestimonial:
+      "Our company is a very professional company, with friendly service, modern homes and interest-free payments",
+    clientName: "Richael Roller",
+    clientImgUrl: "/images/client-02.jpg",
+    clientPosition: "UI/UX Designer",
+  },
+  {
+    ratings: 5,
+    clientTestimonial:
+      "Our company is a very professional company, with friendly service, modern homes and interest-free payments",
+    clientName: "Robert Stephen",
+    clientImgUrl: "/images/client-03.jpg",
+    clientPosition: "UI/UX Designer",
+  },
+];

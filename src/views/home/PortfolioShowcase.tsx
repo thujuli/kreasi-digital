@@ -34,7 +34,7 @@ const PortfolioShowcase: React.FC = () => {
                     <ButtonCircle
                       bgColor="bg-transparent"
                       icon={<GoArrowUpRight />}
-                      border="white"
+                      border={true}
                     />
                   </div>
                 </div>
@@ -56,7 +56,7 @@ const PortfolioShowcase: React.FC = () => {
                     <ButtonCircle
                       bgColor="bg-transparent"
                       icon={<GoArrowUpRight />}
-                      border="white"
+                      border={true}
                     />
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const PortfolioShowcase: React.FC = () => {
                 <ButtonCircle
                   icon={<GoArrowUpRight />}
                   bgColor="bg-transparent"
-                  border="white"
+                  border={true}
                 />
               </div>
             </div>
