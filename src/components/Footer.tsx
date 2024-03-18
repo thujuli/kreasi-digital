@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-secondary/20 pt-[100px]">
       <Container>
-        <div className="flex gap-10">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row gap-4 md:gap-10 px-4 md:px-0">
+          <div className="w-full lg:w-1/2">
             <Image src="/images/logo.png" alt="logo" width={360} height={50} />
             <p className="mt-4 text-secondary">
               Welcome to Kreasi Digital, where creativity meets technology. We
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               digital dreams a reality.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="flex flex-col gap-4">
               <span className="text-xl font-medium">Kreasi Digital</span>
               {menuItems.map((menu, idx) => (
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-8 pb-6">
-          <p className="text-sm text-end text-secondary">
+          <p className="text-sm text-center md:text-end text-secondary">
             &copy; {new Date().getFullYear()} Kreasi Digital. All rights
             reserved.
           </p>

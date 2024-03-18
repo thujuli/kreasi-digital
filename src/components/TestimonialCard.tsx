@@ -19,8 +19,8 @@ const TestimonialCard: React.FC<Props> = (props) => {
     ratings,
   } = props;
   return (
-    <div className="max-w-[420px] px-4 py-6 rounded-2xl border border-secondary">
-      <div className="flex gap-2 mb-4 text-lg text-yellow-400">
+    <div className="min-w-[420px] px-4 py-6 rounded-md md:rounded-2xl border border-secondary">
+      <div className="flex-0 flex gap-2 mb-4 text-lg text-yellow-400">
         {Array(Math.round(ratings))
           .fill(null)
           .map((val, idx) => (
