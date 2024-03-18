@@ -9,16 +9,15 @@ const Hero: React.FC = () => {
       <Container>
         <div className="flex gap-10">
           <div className="w-1/2 flex flex-col justify-center gap-4">
-            <p className="text-secondary">Development Website With Use</p>
-            <h1 className="text-7xl font-medium">
-              Web Development and Maintenance{" "}
+            <h1 className="leading-tight text-7xl font-medium ">
+              Transforming Ideas into Digital{" "}
               <span className="text-accent underline underline-offset-8">
-                Website
+                Masterpieces
               </span>
             </h1>
             <p className="text-secondary">
               With us achieving dreams in building your products, together say
-              “Yes” to extraordinary designs
+              &ldquo;Yes&rdquo; to extraordinary designs.
             </p>
             <div className="space-x-5">
               <Button bgColor="bg-accent">Start a Project</Button>

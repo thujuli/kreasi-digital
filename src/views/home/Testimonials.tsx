@@ -8,10 +8,9 @@ const Testimonials: React.FC = () => {
     <section className="py-[100px]">
       <Container>
         <div className="text-center">
-          <h2 className="text-3xl font-medium">What do they say about</h2>
-          <h2 className="text-3xl font-medium">Our service</h2>
-          <p className="mt-6 text-secondary">
-            Lowbrow hard-edge painting orphism street art rayonism
+          <h2 className="text-4xl font-medium">What do they say about us?</h2>
+          <p className="mt-4 text-secondary">
+            Here is a testimonial from our client
           </p>
         </div>
         <div className="flex gap-8 justify-between mt-8 flex-wrap">

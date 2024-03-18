@@ -5,6 +5,7 @@ import { menuItems } from "@/utils/helper";
 import Link from "next/link";
 import Button from "./Button";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const pathname = usePathname();
@@ -13,7 +14,7 @@ const Navbar: React.FC = () => {
     <nav className="h-[100px] py-[25px]">
       <Container>
         <div className="flex justify-between items-center">
-          <span className="text-2xl font-bold">Kreasi Digital</span>
+          <Image src="/images/logo.png" alt="logo" width={360} height={50} />
           <div className="flex items-center h-[50px] gap-5 rounded-full bg-secondary/30">
             {menuItems.map((item, idx) => (
               <Link

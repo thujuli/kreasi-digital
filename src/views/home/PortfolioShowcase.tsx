@@ -23,11 +23,10 @@ const PortfolioShowcase: React.FC = () => {
                   <div className="w-2/3">
                     <h3 className="mb-3 text-2xl font-medium">Development</h3>
                     <p className="line-clamp-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Laudantium corporis eius amet accusantium quidem
-                      temporibus iure minima assumenda! Labore commodi amet
-                      distinctio esse libero iure quod, architecto quisquam eius
-                      officia?
+                      Our strengths in web development include responsive
+                      design, flexible customization, SEO optimization,
+                      guaranteed security, seamless integration, and
+                      comprehensive post-sales support.
                     </p>
                   </div>
                   <div>
@@ -45,11 +44,9 @@ const PortfolioShowcase: React.FC = () => {
                       Maintenance Website
                     </h3>
                     <p className="line-clamp-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Laudantium corporis eius amet accusantium quidem
-                      temporibus iure minima assumenda! Labore commodi amet
-                      distinctio esse libero iure quod, architecto quisquam eius
-                      officia?
+                      Our website maintenance services ensure your site stays
+                      secure, up-to-date, and optimized, freeing you from
+                      technical worries so you can focus on your business.
                     </p>
                   </div>
                   <div>
@@ -64,20 +61,20 @@ const PortfolioShowcase: React.FC = () => {
             </div>
             <div className="flex flex-1 justify-evenly h-full rounded-3xl bg-white">
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-3xl">200+</h5>
-                <p className="text-secondary">Complete Project</p>
+                <h5 className="mb-2 text-accent font-bold text-3xl">99%</h5>
+                <p className="text-secondary">Client Satisfaction</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-3xl">200+</h5>
-                <p className="text-secondary">Complete Project</p>
+                <h5 className="mb-2 text-accent font-bold text-3xl">500+</h5>
+                <p className="text-secondary">SEO-Optimized Sites</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-3xl">200+</h5>
-                <p className="text-secondary">Complete Project</p>
+                <h5 className="mb-2 text-accent font-bold text-3xl">95%</h5>
+                <p className="text-secondary">On-time Delivery</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-3xl">200+</h5>
-                <p className="text-secondary">Complete Project</p>
+                <h5 className="mb-2 text-accent font-bold text-3xl">10+</h5>
+                <p className="text-secondary">Years Experience</p>
               </div>
             </div>
           </div>
@@ -93,10 +90,9 @@ const PortfolioShowcase: React.FC = () => {
               <div>
                 <h2 className="text-2xl mb-2 font-medium">Portfolio</h2>
                 <p className="line-clamp-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                  facere placeat dolorem rerum architecto facilis cum iste
-                  accusantium optio. Cum error molestias alias magnam eaque,
-                  tempora laborum delectus fugiat temporibus!
+                  We&apos;ve completed numerous website development projects for
+                  a variety of clients, including businesses, non-profits, and
+                  individuals.
                 </p>
               </div>
               <div>
