@@ -19,40 +19,40 @@ export const menuItems = [
 
 export const servicesList = [
   {
-    imgUrl: "/icons/layout.svg",
-    title: "Web Application",
+    imgUrl: "/icons/brush.svg",
+    title: "UI/UX Design",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, debitis libero corrupti asperiores nisi?",
+      "Engaging and intuitive user interface (UI) and user experience (UX) design to enhance user comfort and improve conversions",
   },
   {
     imgUrl: "/icons/playstore.svg",
-    title: "Mobile Application",
+    title: "Mobile App Development",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, debitis libero corrupti asperiores nisi?",
+      "Responsive and innovative mobile app creation to reach more users and expand your business's reach",
   },
   {
     imgUrl: "/icons/puzzle.svg",
-    title: "Social Media",
+    title: "Social Media Management",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, debitis libero corrupti asperiores nisi?",
+      " Strategic management and execution of marketing campaigns across social media platforms to expand brand reach and engagement",
   },
   {
     imgUrl: "/icons/marketing.svg",
-    title: "Marketing",
+    title: "Email Marketing Campaigns",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, debitis libero corrupti asperiores nisi?",
+      "Planning, design, and execution of email marketing campaigns to build relationships with customers and drive conversions",
   },
   {
     imgUrl: "/icons/globe.svg",
-    title: "Web Development",
+    title: "Website Optimization",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, debitis libero corrupti asperiores nisi?",
+      " Website performance optimization, including loading speed, server response time, and overall performance for a better user experience",
   },
   {
-    imgUrl: "/icons/support.svg",
-    title: "Support Services",
+    imgUrl: "/icons/layout.svg",
+    title: "Content Management System (CMS) Integration",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fugit, debitis libero corrupti asperiores nisi?",
+      "Seamless integration of CMS to efficiently manage your website content",
   },
 ];
 
@@ -62,7 +62,7 @@ export const projectsList = [
     job: "Design & Development",
     title: "Blockchain Landing Page",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus ratione nobis dicta corporis repellat est voluptas nesciunt quod natus quam, aut necessitatibus debitis! Ab nemo sed at aperiam dolores?",
+      "The 'Blockchain Landing Page' project is the creation of a dedicated homepage designed to introduce blockchain technology and engage visitors to explore further or take specific actions.",
     link: "https://google.com",
   },
   {
@@ -70,7 +70,7 @@ export const projectsList = [
     job: "Design & Development",
     title: "Fashion Accessories Ecommerce",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus ratione nobis dicta corporis repellat est voluptas nesciunt quod natus quam, aut necessitatibus debitis! Ab nemo sed at aperiam dolores?",
+      "The Fashion Accessories Ecommerce project focuses on launching an online store specializing in trendy accessories like jewelry, bags, and scarves. It offers a seamless shopping experience for fashion enthusiasts seeking stylish additions to their wardrobe.",
     link: "https://google.com",
   },
   {
@@ -78,34 +78,34 @@ export const projectsList = [
     job: "Design & Development",
     title: "CRM System Admin Panel",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam doloribus ratione nobis dicta corporis repellat est voluptas nesciunt quod natus quam, aut necessitatibus debitis! Ab nemo sed at aperiam dolores?",
+      "The CRM System Admin Panel project involves developing a centralized platform for managing customer relationship management (CRM) activities. It serves as a comprehensive hub for administrators to oversee customer interactions, track sales pipelines, and analyze data for informed decision-making. ",
     link: "https://google.com",
   },
 ];
 
 export const testimonialsList = [
   {
-    ratings: 4,
+    ratings: 5,
     clientTestimonial:
-      "Our company is a very professional company, with friendly service, modern homes and interest-free payments",
-    clientName: "Purwa Adi Wicaksana",
+      "Exceptional work! Kreasi Digital revamped our website and keeps it running smoothly with their maintenance services. Couldn't be happier!",
+    clientName: "Sarah Thompson",
     clientImgUrl: "/images/client-01.jpg",
-    clientPosition: "UI/UX Designer",
+    clientPosition: "Marketing Manager",
   },
   {
     ratings: 5,
     clientTestimonial:
-      "Our company is a very professional company, with friendly service, modern homes and interest-free payments",
-    clientName: "Richael Roller",
+      "Professional and reliable! Kreasi Digital not only built us a stunning website but also ensures it stays up-to-date and secure. Highly recommended!",
+    clientName: "Mark Davis",
     clientImgUrl: "/images/client-02.jpg",
-    clientPosition: "UI/UX Designer",
+    clientPosition: "Small Business Owner",
   },
   {
     ratings: 5,
     clientTestimonial:
-      "Our company is a very professional company, with friendly service, modern homes and interest-free payments",
-    clientName: "Robert Stephen",
+      "Top-notch service! Kreasi Digital handles all our web development and maintenance needs seamlessly. Their expertise has truly elevated our online presence.",
+    clientName: "IT Director",
     clientImgUrl: "/images/client-03.jpg",
-    clientPosition: "UI/UX Designer",
+    clientPosition: "Jessica Lee",
   },
 ];

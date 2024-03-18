@@ -4,6 +4,7 @@ import { menuItems } from "@/utils/helper";
 import Link from "next/link";
 import { MdCall, MdLocationPin, MdMail } from "react-icons/md";
 import { FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -11,12 +12,13 @@ const Footer: React.FC = () => {
       <Container>
         <div className="flex gap-10">
           <div className="w-1/2">
-            <h3 className="mb-4 text-2xl font-bold">Kreasi Digital</h3>
-            <p className="text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-              porro vitae qui possimus hic soluta, omnis dolores nemo assumenda
-              aliquid nostrum cumque unde maxime labore. Odit suscipit fugiat
-              assumenda accusamus.
+            <Image src="/images/logo.png" alt="logo" width={360} height={50} />
+            <p className="mt-4 text-secondary">
+              Welcome to Kreasi Digital, where creativity meets technology. We
+              specialize in crafting innovative digital solutions tailored to
+              elevate your brand and drive success in the digital world. From
+              web development to online marketing, we&apos;re here to make your
+              digital dreams a reality.
             </p>
           </div>
           <div className="grid grid-cols-3 gap-6">
@@ -35,11 +37,11 @@ const Footer: React.FC = () => {
               </span>
               <span className="flex items-center gap-2 text-secondary">
                 <MdMail className="text-xl text-white" />{" "}
-                kreasi.digital@gmail.com
+                admin@kreasidigital.com
               </span>
               <span className="flex items-center gap-2 text-secondary">
-                <MdLocationPin className="text-xl text-white" /> 2972 Westheimer
-                Rd. Santa Ana, Ilinois 85486
+                <MdLocationPin className="text-xl text-white" /> Silicon Valley,
+                California, USA
               </span>
             </div>
             <div className="flex flex-col gap-4">

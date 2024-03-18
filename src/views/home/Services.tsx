@@ -9,12 +9,12 @@ const Services: React.FC = () => {
     <section className="pt-[100px]">
       <Container>
         <div className="flex justify-between items-end">
-          <div className="w-1/2 space-y-6">
-            <p className="text-secondary">What are you looking for</p>
-            <h2 className="text-3xl font-medium">Our Services</h2>
+          <div className="w-1/2 space-y-4">
+            <h2 className="text-4xl font-medium">Our Services</h2>
             <p className="text-secondary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repudiandae fugit, debitis libero corrupti asperiores nisi?
+              Explore the Unique Advantages of Opting for Our Services and Dive
+              into Our Comprehensive List of Offerings. Discover Why We&apos;re
+              the Perfect Choice for Your Needs.
             </p>
           </div>
           <Button bgColor="bg-accent">Built a project</Button>

@@ -9,13 +9,10 @@ const Projects: React.FC = () => {
     <section className="pt-[100px]">
       <Container>
         <div className="text-center">
-          <p className="text-secondary mb-6">What are you looking for</p>
-
-          <h2 className="text-3xl font-medium">Success Project With</h2>
-          <h2 className="text-3xl font-medium">Kreasi Digital</h2>
-          <p className="mt-6 text-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            blanditiis ipsum molestias optio.
+          <h2 className="text-4xl font-medium">Success Project With</h2>
+          <h2 className="text-4xl font-medium">Kreasi Digital</h2>
+          <p className="mt-4 text-secondary">
+            Proudly, here are some examples of websites we have worked on.
           </p>
         </div>
 
