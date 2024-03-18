@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
             Here is a testimonial from our client
           </p>
         </div>
-        <div className="flex gap-4 md:gap-8 md:justify-between mt-8 px-4 md:px-0 overflow-x-scroll">
+        <div className="flex gap-4 md:gap-8 lg:justify-between mt-8 px-4 md:px-0 overflow-x-scroll lg:overflow-x-auto">
           {testimonialsList.map((testimonial, idx) => (
             <TestimonialCard
               key={idx}
