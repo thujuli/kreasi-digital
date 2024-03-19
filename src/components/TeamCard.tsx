@@ -6,7 +6,7 @@ interface Props {
   profilePicture: string;
 }
 
-const ShortTeamCard: React.FC<Props> = (props) => {
+const TeamCard: React.FC<Props> = (props) => {
   const { name, profilePicture } = props;
 
   return (
@@ -24,4 +24,4 @@ const ShortTeamCard: React.FC<Props> = (props) => {
   );
 };
 
-export default ShortTeamCard;
+export default TeamCard;

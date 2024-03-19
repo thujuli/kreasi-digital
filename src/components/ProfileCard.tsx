@@ -8,7 +8,7 @@ interface Props {
   id: number;
 }
 
-const LongTeamCard: React.FC<Props> = (props) => {
+const ProfileCard: React.FC<Props> = (props) => {
   const { name, profilePicture, id } = props;
 
   return (
@@ -37,4 +37,4 @@ const LongTeamCard: React.FC<Props> = (props) => {
   );
 };
 
-export default LongTeamCard;
+export default ProfileCard;

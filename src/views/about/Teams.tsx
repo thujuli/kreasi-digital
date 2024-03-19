@@ -1,6 +1,6 @@
 "use client";
 import Container from "@/components/Container";
-import ShortTeamCard from "@/components/ShortTeamCard";
+import TeamCard from "@/components/TeamCard";
 import { useAppSelector } from "@/lib/hooks";
 import React from "react";
 
@@ -18,7 +18,7 @@ const Teams: React.FC = () => {
           {teams.map((team, idx) => {
             const fullName = team.firstName + " " + team.lastName;
             return (
-              <ShortTeamCard
+              <TeamCard
                 key={idx}
                 name={fullName}
                 profilePicture={team.picture}
