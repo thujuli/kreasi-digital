@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import Container from "@/components/Container";
-import ServiceCard from "@/components/ServiceCard";
+import ServicePanel from "@/components/ServicePanel";
 import { servicesList } from "@/utils/helper";
 import React from "react";
 
@@ -23,7 +23,7 @@ const Services: React.FC = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-6 border border-secondary rounded-3xl overflow-hidden">
           {servicesList.map((service, idx) => (
-            <ServiceCard
+            <ServicePanel
               key={idx}
               description={service.description}
               imgUrl={service.imgUrl}

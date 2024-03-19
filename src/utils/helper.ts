@@ -110,4 +110,73 @@ export const testimonialsList = [
   },
 ];
 
+export const DMServices = [
+  {
+    name: "Social Media Management",
+    description:
+      "Strategic management and execution of marketing campaigns across social media platforms to expand brand reach and engagement.",
+  },
+  {
+    name: "Search Engine Optimization (SEO)",
+    description:
+      "Website optimization to improve search engine rankings, enhance online visibility, and generate organic traffic.",
+  },
+  {
+    name: "Email Marketing Campaigns",
+    description:
+      "Planning, design, and execution of email marketing campaigns to build relationships with customers and drive conversions.",
+  },
+  {
+    name: "Copywriting and Content Creation",
+    description:
+      "Compelling and persuasive content writing for websites, blogs, and other marketing materials to increase user engagement and conversions.",
+  },
+];
+
+export const WDServices = [
+  {
+    name: "UI/UX Design",
+    description:
+      "Engaging and intuitive user interface (UI) and user experience (UX) design to enhance user comfort and improve conversions.",
+  },
+  {
+    name: "E-commerce Development",
+    description:
+      "Robust and secure e-commerce website development to facilitate online product or service sales.",
+  },
+  {
+    name: "Mobile App Development",
+    description:
+      "Responsive and innovative mobile app creation to reach more users and expand your business's reach.",
+  },
+  {
+    name: "Website Optimization",
+    description:
+      "Website performance optimization, including loading speed, server response time, and overall performance for a better user experience.",
+  },
+];
+
+export const BSServices = [
+  {
+    name: "Content Management System (CMS) Integration",
+    description:
+      "Seamless integration of CMS to efficiently manage your website content.",
+  },
+  {
+    name: "Cybersecurity Services",
+    description:
+      "Proactive protection against online security threats through advanced security measures and real-time security monitoring.",
+  },
+  {
+    name: "Graphic Design Services",
+    description:
+      "Graphic design for branding, marketing materials, and other visual content to enhance brand appeal and impression.",
+  },
+  {
+    name: "Web Analytics",
+    description:
+      "Implementation of web analytics tools to monitor your website's performance, analyze user behavior, and make data-driven decisions.",
+  },
+];
+
 export const API_RANDOM_USER = "https://randomuser.me/api";
