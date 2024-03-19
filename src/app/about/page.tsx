@@ -1,7 +1,21 @@
+import Culture from "@/views/about/Culture";
+import History from "@/views/about/History";
+import Teams from "@/views/about/Teams";
+import type { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "About Us | Kreasi Digital",
+};
+
 const AboutPage: React.FC = () => {
-  return <div>AboutPage</div>;
+  return (
+    <>
+      <History />
+      <Teams />
+      <Culture />
+    </>
+  );
 };
 
 export default AboutPage;

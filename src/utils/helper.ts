@@ -109,3 +109,5 @@ export const testimonialsList = [
     clientPosition: "Jessica Lee",
   },
 ];
+
+export const API_RANDOM_USER = "https://randomuser.me/api";

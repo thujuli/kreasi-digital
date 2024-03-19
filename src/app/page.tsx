@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Hero from "@/views/home/Hero";
 import PortfolioShowcase from "@/views/home/PortfolioShowcase";
 import Projects from "@/views/home/Projects";
@@ -14,7 +13,6 @@ const HomePage: React.FC = () => {
       <Services />
       <Projects />
       <Testimonials />
-      <Footer />
     </>
   );
 };
