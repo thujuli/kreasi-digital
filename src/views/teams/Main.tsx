@@ -1,0 +1,31 @@
+"use client";
+import Container from "@/components/Container";
+import LongTeamCard from "@/components/LongTeamCard";
+import { useAppSelector } from "@/lib/hooks";
+import React from "react";
+
+const Main: React.FC = () => {
+  const teams = useAppSelector((state) => state.teams);
+
+  return (
+    <section className="pt-[50px] pb-[100px]">
+      <Container>
+        <div className="px-40 space-y-8">
+          {teams.map((team, idx) => {
+            const fullName = team.firstName + " " + team.lastName;
+            return (
+              <LongTeamCard
+                key={idx}
+                id={idx}
+                name={fullName}
+                profilePicture={team.picture}
+              />
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+};
+
+export default Main;
