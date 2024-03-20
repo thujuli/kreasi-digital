@@ -12,7 +12,13 @@ const Footer: React.FC = () => {
       <Container>
         <div className="flex flex-col lg:flex-row gap-4 md:gap-10 px-4 md:px-0">
           <div className="w-full lg:w-1/2">
-            <Image src="/images/logo.png" alt="logo" width={360} height={50} />
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width={360}
+              height={50}
+              quality={70}
+            />
             <p className="mt-4 text-secondary">
               Welcome to Kreasi Digital, where creativity meets technology. We
               specialize in crafting innovative digital solutions tailored to
