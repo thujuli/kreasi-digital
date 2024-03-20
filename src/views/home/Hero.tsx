@@ -11,9 +11,7 @@ const Hero: React.FC = () => {
           <div className="order-2 lg:order-1 w-full lg:w-1/2 flex flex-col justify-center gap-4 px-4 md:px-0">
             <h1 className="leading-tight text-4xl md:text-6xl lg:text-7xl font-medium text-center md:text-start">
               Transforming Ideas into Digital{" "}
-              <span className="text-accent underline underline-offset-8">
-                Masterpieces
-              </span>
+              <span className="underline underline-offset-8">Masterpieces</span>
             </h1>
             <p className="text-secondary text-center md:text-start">
               With us achieving dreams in building your products, together say
@@ -32,6 +30,7 @@ const Hero: React.FC = () => {
               alt="Hero Picture"
               width={670}
               height={600}
+              quality={70}
             ></Image>
           </div>
         </div>

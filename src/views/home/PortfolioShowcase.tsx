@@ -63,36 +63,36 @@ const PortfolioShowcase: React.FC = () => {
             </div>
             <div className="flex flex-1 justify-evenly h-full py-2 rounded md:rounded-3xl bg-white">
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-lg md:text-3xl">
+                <span className="mb-2 text-accent font-bold text-lg md:text-3xl">
                   99%
-                </h5>
-                <p className="text-sm md:text-base text-secondary text-center">
+                </span>
+                <span className="text-sm md:text-base text-primary text-center">
                   Client Satisfaction
-                </p>
+                </span>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-lg md:text-3xl">
+                <span className="mb-2 text-accent font-bold text-lg md:text-3xl">
                   500+
-                </h5>
-                <p className="text-sm md:text-base text-secondary text-center">
+                </span>
+                <span className="text-sm md:text-base text-primary text-center">
                   SEO-Optimized Sites
-                </p>
+                </span>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-lg md:text-3xl">
+                <span className="mb-2 text-accent font-bold text-lg md:text-3xl">
                   95%
-                </h5>
-                <p className="text-sm md:text-base text-secondary text-center">
+                </span>
+                <span className="text-sm md:text-base text-primary text-center">
                   On-time Delivery
-                </p>
+                </span>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h5 className="mb-2 text-accent font-bold text-lg md:text-3xl">
+                <span className="mb-2 text-accent font-bold text-lg md:text-3xl">
                   10+
-                </h5>
-                <p className="text-sm md:text-base text-secondary text-center">
+                </span>
+                <span className="text-sm md:text-base text-primary text-center">
                   Years Experience
-                </p>
+                </span>
               </div>
             </div>
           </div>
