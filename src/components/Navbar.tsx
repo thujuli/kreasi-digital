@@ -64,6 +64,7 @@ const Navbar: React.FC = () => {
             alt="logo"
             width={360}
             height={50}
+            quality={70}
             className="w-[200px] md:w-[360px]"
           />
           <div className="hidden lg:flex items-center h-[50px] gap-5 rounded-full bg-secondary/30">
