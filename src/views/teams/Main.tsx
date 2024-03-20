@@ -10,7 +10,7 @@ const Main: React.FC = () => {
   return (
     <section className="pt-[50px] pb-[100px]">
       <Container>
-        <div className="px-40 space-y-8">
+        <div className="lg:px-40 space-y-8">
           {teams.map((team, idx) => {
             const fullName = team.firstName + " " + team.lastName;
             return (

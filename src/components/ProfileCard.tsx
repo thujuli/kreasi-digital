@@ -12,11 +12,25 @@ const ProfileCard: React.FC<Props> = (props) => {
   const { name, profilePicture, id } = props;
 
   return (
-    <div className="flex items-center justify-center rounded-lg overflow-hidden bg-secondary/10">
-      <div className={`flex-0 min-w-[300px] ${id % 2 ? "order-2" : "order-1"}`}>
-        <Image src={profilePicture} alt={name} width={300} height={300} />
+    <div className="flex flex-col md:flex-row items-center justify-center py-8 md:py-4 lg:py-0 lg:rounded-lg overflow-hidden bg-secondary/10">
+      <div
+        className={`flex-0 min-w-[300px] items-center ${
+          id % 2 ? "md:order-2" : "md:order-1"
+        }`}
+      >
+        <Image
+          src={profilePicture}
+          alt={name}
+          width={300}
+          height={300}
+          className="mb-4 md:mb-0"
+        />
       </div>
-      <div className={`space-y-3 px-8 ${id % 2 ? "order-1" : "order-2"}`}>
+      <div
+        className={`text-center md:text-start space-y-3 px-8 ${
+          id % 2 ? "md:order-1" : "md:order-2"
+        }`}
+      >
         <h3 className="text-4xl font-medium">{name}</h3>
         <p className="text-xl">Fullstack Web Developer</p>
         <p className="text-secondary">
@@ -26,7 +40,7 @@ const ProfileCard: React.FC<Props> = (props) => {
           implementing features, managing databases, and ensuring the smooth
           functionality of the entire application.
         </p>
-        <div className="flex gap-4 text-xl text-white">
+        <div className="pt-2 lg:pt-0 flex gap-4 justify-center md:justify-start text-xl text-white">
           <FaInstagram />
           <FaWhatsapp />
           <FaYoutube />
