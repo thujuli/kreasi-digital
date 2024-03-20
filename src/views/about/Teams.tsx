@@ -14,7 +14,7 @@ const Teams: React.FC = () => {
           <h1 className="text-3xl font-medium uppercase">Meet Our Team</h1>
           <p>We Are The Best Team</p>
         </div>
-        <div className="flex gap-10 justify-center mt-6">
+        <div className="flex flex-col md:flex-row gap-10 lg:justify-center items-center mt-6 md:overflow-x-auto">
           {teams.map((team, idx) => {
             const fullName = team.firstName + " " + team.lastName;
             return (
