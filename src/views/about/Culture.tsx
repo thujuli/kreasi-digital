@@ -30,6 +30,7 @@ const Culture: React.FC = () => {
             alt="Culture"
             width={670}
             height={400}
+            quality={70}
           />
         </div>
       </Container>

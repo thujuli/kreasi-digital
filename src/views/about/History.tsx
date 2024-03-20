@@ -13,6 +13,7 @@ const History: React.FC = () => {
             alt="About Us"
             width={670}
             height={400}
+            quality={70}
           />
           <div className="space-y-4">
             <p className="text-xl text-secondary">About Us</p>
