@@ -11,7 +11,9 @@ const Teams: React.FC = () => {
     <section className="pt-[100px]">
       <Container>
         <div className="text-center">
-          <h1 className="text-3xl font-medium uppercase">Meet Our Team</h1>
+          <h1 className="text-3xl md:text-4xl font-medium uppercase">
+            Meet Our Team
+          </h1>
           <p>We Are The Best Team</p>
         </div>
         <div className="flex flex-col md:flex-row gap-10 lg:justify-center items-center mt-6 md:overflow-x-auto">

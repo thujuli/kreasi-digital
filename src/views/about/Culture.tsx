@@ -1,38 +1,31 @@
 import Container from "@/components/Container";
-import Image from "next/image";
+import CultureCard from "@/components/CultureCard";
+import { ourCulture } from "@/utils/helper";
 import React from "react";
 
 const Culture: React.FC = () => {
   return (
     <section className="py-[100px]">
       <Container>
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <Image
-            src="/images/culture-pic.jpg"
-            alt="Culture"
-            width={670}
-            height={400}
-            quality={70}
-            className="w-full lg:max-w-[670px] rounded-none md:rounded-lg"
-          />
-          <div className="space-y-4 px-4 md:px-0">
-            <h1 className="text-4xl md:text-3xl">
-              We are committed to delivering the ultimate customer experience
-            </h1>
-            <p className="text-secondary">
-              At <strong className="text-white">Kreasi Digital</strong>, we
-              foster a culture of innovation, collaboration, and excellence. We
-              believe in empowering our team members to explore their
-              creativity, take ownership of their work, and continuously learn
-              and grow. Transparency, open communication, and mutual respect are
-              the pillars of our organization, where every voice is valued and
-              heard. We embrace diversity and celebrate individuality,
-              recognizing that diverse perspectives drive innovation and
-              success. Together, we strive to create a dynamic and inclusive
-              work environment where everyone feels inspired, supported, and
-              motivated to achieve their fullest potential.
-            </p>
-          </div>
+        <div className="px-4 md:px-0 text-center">
+          <h1 className="text-3xl md:text-4xl font-medium uppercase">
+            Our Culture
+          </h1>
+          <p className="md:w-10/12 mx-auto">
+            Customer-centric Excellence, Innovation driven by Collaboration, and
+            fostering an Inclusive and Supportive environment
+          </p>
+        </div>
+        <div className="mt-6 space-y-6">
+          {ourCulture.map((culture, idx) => (
+            <CultureCard
+              key={idx}
+              id={idx}
+              description={culture.description}
+              imgUrl={culture.imgUrl}
+              title={culture.title}
+            />
+          ))}
         </div>
       </Container>
     </section>
