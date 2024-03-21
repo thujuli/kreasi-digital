@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
   const getProjects = async () => {
     try {
       const response = await getSuccessProjects();
-      const data = response.map((project) => ({
+      const data = response.map((project: any) => ({
         title: project.title,
         description: project.description,
         job: project.job,
