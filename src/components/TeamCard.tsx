@@ -12,9 +12,9 @@ const TeamCard: React.FC<Props> = (props) => {
   return (
     <div className="max-w-[300px] md:min-w-[300px] rounded-lg overflow-hidden bg-secondary/10">
       <Image src={profilePicture} alt={name} width={300} height={300} />
-      <div className="mt-3 space-y-2 text-center p-4">
-        <h3 className="text-xl font-medium">{name}</h3>
-        <p>Fullstack Web Developer</p>
+      <div className="flex flex-col gap-2 mt-3 text-center p-4">
+        <span className="text-xl font-medium">{name}</span>
+        <span>Fullstack Web Developer</span>
         <p className="text-secondary">
           Designs and implements both front-end and back-end components of web
           applications.
