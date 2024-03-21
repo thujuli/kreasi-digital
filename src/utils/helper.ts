@@ -56,33 +56,6 @@ export const servicesList = [
   },
 ];
 
-export const projectsList = [
-  {
-    imgUrl: "/images/project-blockchain-lp.png",
-    job: "Design & Development",
-    title: "Blockchain Landing Page",
-    description:
-      "The 'Blockchain Landing Page' project is the creation of a dedicated homepage designed to introduce blockchain technology and engage visitors to explore further or take specific actions.",
-    link: "https://google.com",
-  },
-  {
-    imgUrl: "/images/project-fashion-ecom.jpg",
-    job: "Design & Development",
-    title: "Fashion Accessories Ecommerce",
-    description:
-      "The Fashion Accessories Ecommerce project focuses on launching an online store specializing in trendy accessories like jewelry, bags, and scarves. It offers a seamless shopping experience for fashion enthusiasts seeking stylish additions to their wardrobe.",
-    link: "https://google.com",
-  },
-  {
-    imgUrl: "/images/project-crm-panel.png",
-    job: "Design & Development",
-    title: "CRM System Admin Panel",
-    description:
-      "The CRM System Admin Panel project involves developing a centralized platform for managing customer relationship management (CRM) activities. It serves as a comprehensive hub for administrators to oversee customer interactions, track sales pipelines, and analyze data for informed decision-making. ",
-    link: "https://google.com",
-  },
-];
-
 export const testimonialsList = [
   {
     ratings: 5,

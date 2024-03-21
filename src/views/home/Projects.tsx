@@ -1,10 +1,39 @@
+"use client";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
-import { projectsList } from "@/utils/helper";
-import React from "react";
+import { getSuccessProjects } from "@/utils/contentful";
+import { ProjectData } from "@/utils/types/projects";
+import { AxiosError } from "axios";
+import React, { useEffect, useState } from "react";
 
 const Projects: React.FC = () => {
+  const [projects, setProjects] = useState<ProjectData[]>([]);
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  const getProjects = async () => {
+    try {
+      const response = await getSuccessProjects();
+      const data = response.map((project) => ({
+        title: project.title,
+        description: project.description,
+        job: project.job,
+        projectLink: project.projectLink,
+        imageUrl: "https:" + project.image?.fields?.file?.url,
+      }));
+      setProjects(data);
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error(error.message);
+      } else if (error instanceof AxiosError) {
+        console.error(error.response?.data);
+      }
+    }
+  };
+
   return (
     <section className="pt-[100px]">
       <Container>
@@ -19,14 +48,14 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="flex flex-col gap-4 md:gap-8 mt-8">
-          {projectsList.map((project, idx) => (
+          {projects.map((project, idx) => (
             <ProjectCard
               key={idx}
               id={idx}
               description={project.description}
-              imgUrl={project.imgUrl}
+              imgUrl={project.imageUrl}
               job={project.job}
-              link={project.link}
+              link={project.projectLink}
               title={project.title}
             />
           ))}
