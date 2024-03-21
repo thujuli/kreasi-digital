@@ -7,7 +7,15 @@ const Culture: React.FC = () => {
     <section className="py-[100px]">
       <Container>
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="order-2 lg:order-1 space-y-4 px-4 md:px-0">
+          <Image
+            src="/images/culture-pic.jpg"
+            alt="Culture"
+            width={670}
+            height={400}
+            quality={70}
+            className="w-full lg:max-w-[670px] rounded-none md:rounded-lg"
+          />
+          <div className="space-y-4 px-4 md:px-0">
             <h1 className="text-4xl md:text-3xl">
               We are committed to delivering the ultimate customer experience
             </h1>
@@ -25,14 +33,6 @@ const Culture: React.FC = () => {
               motivated to achieve their fullest potential.
             </p>
           </div>
-          <Image
-            src="/images/culture-pic.jpg"
-            alt="Culture"
-            width={670}
-            height={400}
-            quality={70}
-            className="w-full lg:max-w-[670px] order-1 lg:order-2 rounded-none md:rounded-lg"
-          />
         </div>
       </Container>
     </section>
