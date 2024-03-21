@@ -11,14 +11,14 @@ const History: React.FC = () => {
           <Image
             src="/images/about-pic.jpg"
             alt="About Us"
-            width={670}
+            width={500}
             height={400}
             quality={70}
-            className="w-full lg:max-w-[670px] rounded-none md:rounded-lg"
+            className="w-full lg:min-w-[500px] rounded-none md:rounded-lg object-cover"
           />
           <div className="space-y-4 px-4 md:px-0">
             <p className="text-xl text-secondary">About Us</p>
-            <h1 className="text-4xl md:text-3xl">We Always Make The Best</h1>
+            <h1 className="text-3xl md:text-4xl">We Always Make The Best</h1>
             <p className="text-secondary">
               <strong className="text-white">Kreasi Digital </strong>was founded
               in 2010 by <strong className="text-white">John Smith </strong>

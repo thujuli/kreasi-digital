@@ -179,4 +179,25 @@ export const BSServices = [
   },
 ];
 
+export const ourCulture = [
+  {
+    title: "Customer-Centric Excellence",
+    description:
+      "At Kreasi Digital, our foremost commitment is to deliver unparalleled customer experiences. We prioritize understanding and meeting the needs of our clients, ensuring their satisfaction and success drive everything we do. Our culture revolves around consistently exceeding expectations and providing exceptional service at every touchpoint.",
+    imgUrl: "/images/culture-01.jpg",
+  },
+  {
+    title: "Innovation and Collaboration",
+    description:
+      "Innovation is the lifeblood of Kreasi Digital. We foster an environment where creativity flourishes, encouraging our team members to think outside the box and push boundaries. Collaboration is key, as we believe the best ideas emerge from diverse perspectives working together towards a common goal. We embrace experimentation and are not afraid to take calculated risks to stay ahead of the curve in an ever-evolving digital landscape.",
+    imgUrl: "/images/culture-02.jpg",
+  },
+  {
+    title: "Customer-Centric Excellence",
+    description:
+      "At the heart of Kreasi Digital is a vibrant and inclusive community. We prioritize creating a workplace where every voice is heard, valued, and respected. Diversity is celebrated as a catalyst for innovation, and we actively promote an environment where individuals feel empowered to be themselves. Through mentorship, support networks, and continuous learning opportunities, we strive to ensure that every team member feels inspired, supported, and motivated to achieve their fullest potential.",
+    imgUrl: "/images/culture-03.jpg",
+  },
+];
+
 export const API_RANDOM_USER = "https://randomuser.me/api";
