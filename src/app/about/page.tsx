@@ -12,8 +12,8 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <History />
-      <Teams />
       <Culture />
+      <Teams />
     </>
   );
 };
