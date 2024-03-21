@@ -5,13 +5,13 @@ import React from "react";
 
 const Culture: React.FC = () => {
   return (
-    <section className="py-[100px]">
+    <section className="pt-[100px]">
       <Container>
         <div className="px-4 md:px-0 text-center">
           <h1 className="text-3xl md:text-4xl font-medium uppercase">
             Our Culture
           </h1>
-          <p className="md:w-10/12 mx-auto">
+          <p className="md:w-10/12 lg:w-8/12 mx-auto">
             Customer-centric Excellence, Innovation driven by Collaboration, and
             fostering an Inclusive and Supportive environment
           </p>

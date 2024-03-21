@@ -8,7 +8,7 @@ const Teams: React.FC = () => {
   const teams = useAppSelector((state) => state.teams);
 
   return (
-    <section className="pt-[100px]">
+    <section className="py-[100px]">
       <Container>
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl font-medium uppercase">
