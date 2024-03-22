@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
@@ -7,7 +7,7 @@ interface Props {
   clientName: string;
   clientPosition: string;
   clientTestimonial: string;
-  clientImgUrl: string;
+  clientImgUrl: StaticImageData;
 }
 
 const TestimonialCard: React.FC<Props> = (props) => {
@@ -31,13 +31,16 @@ const TestimonialCard: React.FC<Props> = (props) => {
       </div>
       <p className="mb-4 text-secondary">{clientTestimonial}</p>
       <div className="flex gap-3 items-center">
-        <Image
-          src={clientImgUrl}
-          alt={clientName}
-          width={50}
-          height={50}
-          className="flex-0 h-[50px] w-[50px] rounded-full border-2 border-white object-cover"
-        />
+        <div className="relative w-[50px] h-[50px]">
+          <Image
+            src={clientImgUrl}
+            alt={clientName}
+            fill
+            sizes="100vw"
+            placeholder="blur"
+            className="rounded-full border-2 border-white object-cover"
+          />
+        </div>
         <div className="flex-1 space-y-1">
           <p className="font-medium">{clientName}</p>
           <p className="text-secondary">{clientPosition}</p>

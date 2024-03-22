@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Image from "next/image";
 import React from "react";
+import heroPic from "@/assets/images/hero-pic.png";
 
 const Hero: React.FC = () => {
   return (
@@ -24,13 +25,14 @@ const Hero: React.FC = () => {
               </Button>
             </div>
           </div>
-          <div className="order-1 lg:order-2 w-full lg:w-1/2">
+          <div className="relative order-1 lg:order-2 w-full lg:w-1/2 h-[375px] md:h-[660px] lg:h-[600px]">
             <Image
-              src={"/images/hero-pic.png"}
+              src={heroPic}
               alt="Hero Picture"
-              width={670}
-              height={600}
-              quality={70}
+              fill
+              sizes="100vw"
+              priority
+              className="object-contain"
             ></Image>
           </div>
         </div>

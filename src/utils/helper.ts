@@ -1,3 +1,10 @@
+import client01 from "@/assets/images/client-01.jpg";
+import client02 from "@/assets/images/client-02.jpg";
+import client03 from "@/assets/images/client-03.jpg";
+import culture01 from "@/assets/images/culture-01.jpg";
+import culture02 from "@/assets/images/culture-02.jpg";
+import culture03 from "@/assets/images/culture-03.jpg";
+
 export const menuItems = [
   {
     name: "Home",
@@ -62,7 +69,7 @@ export const testimonialsList = [
     clientTestimonial:
       "Exceptional work! Kreasi Digital revamped our website and keeps it running smoothly with their maintenance services. Couldn't be happier!",
     clientName: "Sarah Thompson",
-    clientImgUrl: "/images/client-01.jpg",
+    clientImgUrl: client01,
     clientPosition: "Marketing Manager",
   },
   {
@@ -70,7 +77,7 @@ export const testimonialsList = [
     clientTestimonial:
       "Professional and reliable! Kreasi Digital not only built us a stunning website but also ensures it stays up-to-date and secure. Highly recommended!",
     clientName: "Mark Davis",
-    clientImgUrl: "/images/client-02.jpg",
+    clientImgUrl: client02,
     clientPosition: "Small Business Owner",
   },
   {
@@ -78,7 +85,7 @@ export const testimonialsList = [
     clientTestimonial:
       "Top-notch service! Kreasi Digital handles all our web development and maintenance needs seamlessly. Their expertise has truly elevated our online presence.",
     clientName: "IT Director",
-    clientImgUrl: "/images/client-03.jpg",
+    clientImgUrl: client03,
     clientPosition: "Jessica Lee",
   },
 ];
@@ -157,19 +164,19 @@ export const ourCulture = [
     title: "Customer-Centric Excellence",
     description:
       "At Kreasi Digital, our foremost commitment is to deliver unparalleled customer experiences. We prioritize understanding and meeting the needs of our clients, ensuring their satisfaction and success drive everything we do. Our culture revolves around consistently exceeding expectations and providing exceptional service at every touchpoint.",
-    imgUrl: "/images/culture-01.jpg",
+    imgUrl: culture01,
   },
   {
     title: "Innovation and Collaboration",
     description:
       "Innovation is the lifeblood of Kreasi Digital. We foster an environment where creativity flourishes, encouraging our team members to think outside the box and push boundaries. Collaboration is key, as we believe the best ideas emerge from diverse perspectives working together towards a common goal. We embrace experimentation and are not afraid to take calculated risks to stay ahead of the curve in an ever-evolving digital landscape.",
-    imgUrl: "/images/culture-02.jpg",
+    imgUrl: culture02,
   },
   {
     title: "Customer-Centric Excellence",
     description:
       "At the heart of Kreasi Digital is a vibrant and inclusive community. We prioritize creating a workplace where every voice is heard, valued, and respected. Diversity is celebrated as a catalyst for innovation, and we actively promote an environment where individuals feel empowered to be themselves. Through mentorship, support networks, and continuous learning opportunities, we strive to ensure that every team member feels inspired, supported, and motivated to achieve their fullest potential.",
-    imgUrl: "/images/culture-03.jpg",
+    imgUrl: culture03,
   },
 ];
 

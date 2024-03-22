@@ -25,7 +25,6 @@ const ProjectCard: React.FC<Props> = (props) => {
           alt={title}
           height={450}
           width={760}
-          quality={70}
           className="w-full h-[200px] md:h-[260px] lg:h-full object-cover"
         />
       </div>
