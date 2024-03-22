@@ -11,6 +11,7 @@ import { MdMenu } from "react-icons/md";
 import axios, { AxiosError } from "axios";
 import { useAppDispatch } from "@/lib/hooks";
 import { setTeams } from "@/lib/features/teamsSlice";
+import logo from "@/assets/images/logo.png";
 
 interface Person {
   firstName: string;
@@ -59,14 +60,16 @@ const Navbar: React.FC = () => {
     <nav className="h-[100px] py-[25px]">
       <Container>
         <div className="flex justify-between items-center px-4 md:px-0">
-          <Image
-            src="/images/logo.png"
-            alt="logo"
-            width={360}
-            height={50}
-            quality={70}
-            className="w-[200px] md:w-[360px]"
-          />
+          <div className="relative w-[200px] md:w-[340px] h-[50px]">
+            <Image
+              src={logo}
+              alt="logo"
+              fill
+              sizes="100vw"
+              priority
+              className="object-contain"
+            />
+          </div>
           <div className="hidden lg:flex items-center h-[50px] gap-5 rounded-full bg-secondary/30">
             {menuItems.map((item, idx) => (
               <Link

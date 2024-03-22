@@ -4,10 +4,11 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import portfolioPic from "@/assets/images/portfolio-pic.jpg";
 
 const PortfolioShowcase: React.FC = () => {
   return (
-    <section className="pt-[150px]">
+    <section className="pt-[100px]">
       <Container>
         <div className="flex flex-col lg:flex-row gap-[30px]">
           <div className="w-full lg:w-7/12 flex flex-col gap-[30px]">
@@ -96,13 +97,14 @@ const PortfolioShowcase: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-5/12 h-[320px] md:h-[400px] relative rounded-3xl border-4 overflow-hidden">
+          <div className="relative w-full lg:w-5/12 h-[320px] md:h-[400px] rounded-3xl border-4 overflow-hidden">
             <Image
-              src={"/images/portfolio-pic.jpg"}
+              src={portfolioPic}
               alt="Portfolio Showcase Picture"
-              width={550}
-              height={400}
-              className="absolute inset-0 h-full object-cover"
+              fill
+              sizes="100vw"
+              placeholder="blur"
+              className="absolute object-cover"
             />
             <div className="absolute bottom-0 flex items-center justify-between gap-10 px-8 pb-6">
               <div>

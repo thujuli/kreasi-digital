@@ -2,20 +2,24 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import Image from "next/image";
 import React from "react";
+import aboutPic from "@/assets/images/about-pic.jpg";
 
 const History: React.FC = () => {
   return (
     <section className="pt-[50px]">
       <Container>
         <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <Image
-            src="/images/about-pic.jpg"
-            alt="About Us"
-            width={500}
-            height={400}
-            quality={70}
-            className="w-full lg:min-w-[500px] rounded-none md:rounded-lg object-cover"
-          />
+          <div className="relative w-full lg:min-w-[500px] h-[400px] rounded-none md:rounded-lg overflow-hidden">
+            <Image
+              src={aboutPic}
+              alt="About Us"
+              sizes="100vw"
+              fill
+              priority
+              placeholder="blur"
+              className="object-cover"
+            />
+          </div>
           <div className="space-y-4 px-4 md:px-0">
             <p className="text-xl text-secondary">About Us</p>
             <h1 className="text-3xl md:text-4xl">We Always Make The Best</h1>
