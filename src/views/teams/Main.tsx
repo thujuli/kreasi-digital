@@ -1,27 +1,27 @@
-"use client";
 import Container from "@/components/Container";
 import ProfileCard from "@/components/ProfileCard";
-import { useAppSelector } from "@/lib/hooks";
+import { fetchOurTeam } from "@/lib/data";
 import React from "react";
 
-const Main: React.FC = () => {
-  const teams = useAppSelector((state) => state.teams);
+const Main: React.FC = async () => {
+  const ourTeams = await fetchOurTeam();
 
   return (
     <section className="pt-[50px] pb-[100px]">
       <Container>
         <div className="lg:px-40 space-y-8">
-          {teams.map((team, idx) => {
-            const fullName = team.firstName + " " + team.lastName;
-            return (
-              <ProfileCard
-                key={idx}
-                id={idx}
-                name={fullName}
-                profilePicture={team.picture}
-              />
-            );
-          })}
+          {ourTeams &&
+            ourTeams.map((person, idx) => {
+              const fullName = person.firstName + " " + person.lastName;
+              return (
+                <ProfileCard
+                  key={idx}
+                  id={idx}
+                  name={fullName}
+                  profilePicture={person.picture}
+                />
+              );
+            })}
         </div>
       </Container>
     </section>
