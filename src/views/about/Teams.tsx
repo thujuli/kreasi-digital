@@ -1,11 +1,10 @@
-"use client";
 import Container from "@/components/Container";
 import TeamCard from "@/components/TeamCard";
-import { useAppSelector } from "@/lib/hooks";
+import { fetchOurTeam } from "@/lib/data";
 import React from "react";
 
-const Teams: React.FC = () => {
-  const teams = useAppSelector((state) => state.teams);
+const Teams: React.FC = async () => {
+  const ourTeam = await fetchOurTeam();
 
   return (
     <section className="py-[100px]">
@@ -17,16 +16,17 @@ const Teams: React.FC = () => {
           <p>We Are The Best Team</p>
         </div>
         <div className="flex flex-col md:flex-row gap-10 lg:justify-center items-center mt-6 md:overflow-x-auto">
-          {teams.map((team, idx) => {
-            const fullName = team.firstName + " " + team.lastName;
-            return (
-              <TeamCard
-                key={idx}
-                name={fullName}
-                profilePicture={team.picture}
-              />
-            );
-          })}
+          {ourTeam &&
+            ourTeam.map((person, idx) => {
+              const fullName = person.firstName + " " + person.lastName;
+              return (
+                <TeamCard
+                  key={idx}
+                  name={fullName}
+                  profilePicture={person.picture}
+                />
+              );
+            })}
         </div>
       </Container>
     </section>

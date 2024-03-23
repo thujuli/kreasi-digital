@@ -1,38 +1,11 @@
-"use client";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
-import { getSuccessProjects } from "@/utils/contentful";
-import { ProjectData } from "@/utils/types/projects";
-import { AxiosError } from "axios";
-import React, { useEffect, useState } from "react";
+import { fetchProjects } from "@/lib/data";
+import React from "react";
 
-const Projects: React.FC = () => {
-  const [projects, setProjects] = useState<ProjectData[]>([]);
-
-  useEffect(() => {
-    getProjects();
-  }, []);
-
-  const getProjects = async () => {
-    try {
-      const response = await getSuccessProjects();
-      const data = response.map((project: any) => ({
-        title: project.title,
-        description: project.description,
-        job: project.job,
-        projectLink: project.projectLink,
-        imageUrl: "https:" + project.image?.fields?.file?.url,
-      }));
-      setProjects(data);
-    } catch (error) {
-      if (error instanceof Error) {
-        console.error(error.message);
-      } else if (error instanceof AxiosError) {
-        console.error(error.response?.data);
-      }
-    }
-  };
+const Projects: React.FC = async () => {
+  const projects = await fetchProjects();
 
   return (
     <section className="pt-[100px]">
@@ -48,17 +21,18 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="flex flex-col gap-4 md:gap-8 mt-8">
-          {projects.map((project, idx) => (
-            <ProjectCard
-              key={idx}
-              id={idx}
-              description={project.description}
-              imgUrl={project.imageUrl}
-              job={project.job}
-              link={project.projectLink}
-              title={project.title}
-            />
-          ))}
+          {projects &&
+            projects.map((project, idx) => (
+              <ProjectCard
+                key={idx}
+                id={idx}
+                description={project.description}
+                imgUrl={project.imageUrl}
+                job={project.job}
+                link={project.projectLink}
+                title={project.title}
+              />
+            ))}
         </div>
 
         <div className="mt-8 flex justify-center">
