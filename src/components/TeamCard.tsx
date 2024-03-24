@@ -1,3 +1,4 @@
+import { getBlurData } from "@/lib/blurGenerator";
 import Image from "next/image";
 import React from "react";
 
@@ -6,12 +7,23 @@ interface Props {
   profilePicture: string;
 }
 
-const TeamCard: React.FC<Props> = (props) => {
+const TeamCard: React.FC<Props> = async (props) => {
   const { name, profilePicture } = props;
+  const blurData = await getBlurData(profilePicture);
 
   return (
     <div className="max-w-[300px] md:min-w-[300px] rounded-lg overflow-hidden bg-secondary/10">
-      <Image src={profilePicture} alt={name} width={300} height={300} />
+      <div className="relative w-[300px] h-[300px]">
+        <Image
+          src={profilePicture}
+          alt={name}
+          fill
+          sizes="100vw"
+          placeholder="blur"
+          blurDataURL={blurData}
+          className="object-cover"
+        />
+      </div>
       <div className="flex flex-col gap-2 mt-3 text-center p-4">
         <span className="text-xl font-medium">{name}</span>
         <span>Fullstack Web Developer</span>

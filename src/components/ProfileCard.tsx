@@ -1,3 +1,4 @@
+import { getBlurData } from "@/lib/blurGenerator";
 import Image from "next/image";
 import React from "react";
 import { FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
@@ -8,22 +9,25 @@ interface Props {
   id: number;
 }
 
-const ProfileCard: React.FC<Props> = (props) => {
+const ProfileCard: React.FC<Props> = async (props) => {
   const { name, profilePicture, id } = props;
+  const blurData = await getBlurData(profilePicture);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center py-8 md:py-4 lg:py-0 lg:rounded-lg overflow-hidden bg-secondary/10">
       <div
-        className={`flex-0 min-w-[300px] items-center ${
+        className={`relative flex-0 min-w-[300px] h-[300px] items-center ${
           id % 2 ? "md:order-2" : "md:order-1"
         }`}
       >
         <Image
           src={profilePicture}
           alt={name}
-          width={300}
-          height={300}
-          className="mb-4 md:mb-0"
+          fill
+          sizes="100vw"
+          placeholder="blur"
+          blurDataURL={blurData}
+          className="object-cover mb-4 md:mb-0"
         />
       </div>
       <div
@@ -41,10 +45,18 @@ const ProfileCard: React.FC<Props> = (props) => {
           functionality of the entire application.
         </p>
         <div className="pt-2 lg:pt-0 flex gap-4 justify-center md:justify-start text-xl text-white">
-          <FaInstagram />
-          <FaWhatsapp />
-          <FaYoutube />
-          <FaTwitter />
+          <a href="https://www.instagram.com/" target="_blank">
+            <FaInstagram />
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <FaWhatsapp />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <FaYoutube />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <FaTwitter />
+          </a>
         </div>
       </div>
     </div>

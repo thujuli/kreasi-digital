@@ -34,7 +34,11 @@ const Footer: React.FC = () => {
             <div className="flex flex-col gap-4">
               <span className="text-xl font-medium">Kreasi Digital</span>
               {menuItems.map((menu, idx) => (
-                <Link key={idx} href={menu.url} className="text-secondary">
+                <Link
+                  key={idx}
+                  href={menu.url}
+                  className="text-secondary w-fit"
+                >
                   {menu.name}
                 </Link>
               ))}
@@ -55,18 +59,34 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex flex-col gap-4">
               <span className="text-xl font-medium">Social</span>
-              <span className="flex items-center gap-2 text-secondary">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/"
+                className="flex items-center gap-2 text-secondary"
+              >
                 <FaInstagram className="text-xl text-white" /> Instagram
-              </span>
-              <span className="flex items-center gap-2 text-secondary">
+              </a>
+              <a
+                target="_blank"
+                href="https://web.whatsapp.com/"
+                className="flex items-center gap-2 text-secondary"
+              >
                 <FaWhatsapp className="text-xl text-white" /> Whatsapp
-              </span>
-              <span className="flex items-center gap-2 text-secondary">
+              </a>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/"
+                className="flex items-center gap-2 text-secondary"
+              >
                 <FaYoutube className="text-xl text-white" /> Youtube
-              </span>
-              <span className="flex items-center gap-2 text-secondary">
+              </a>
+              <a
+                target="_blank"
+                href="https://twitter.com/"
+                className="flex items-center gap-2 text-secondary"
+              >
                 <FaTwitter className="text-xl text-white" /> Twitter
-              </span>
+              </a>
             </div>
           </div>
         </div>
