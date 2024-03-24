@@ -1,3 +1,4 @@
+import { getBlurData } from "@/lib/blurGenerator";
 import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
@@ -11,25 +12,29 @@ interface Props {
   link: string;
 }
 
-const ProjectCard: React.FC<Props> = (props) => {
+const ProjectCard: React.FC<Props> = async (props) => {
   const { description, imgUrl, link, job, title, id } = props;
+  const blurData = await getBlurData(imgUrl);
+
   return (
-    <div className="flex flex-col lg:flex-row lg:h-[450px] lg:gap-[30px] rounded-md overflow-hidden">
+    <div className="flex flex-col lg:flex-row lg:gap-[30px] rounded-md overflow-hidden">
       <div
-        className={`flex-0 w-full lg:w-[860px] lg:rounded-3xl overflow-hidden ${
+        className={`relative w-full h-[250px] md:h-[300px] lg:h-[450px] lg:rounded-3xl overflow-hidden ${
           id % 2 ? "lg:order-2" : "lg:order-1"
         }`}
       >
         <Image
           src={imgUrl}
           alt={title}
-          height={450}
-          width={760}
-          className="w-full h-[200px] md:h-[260px] lg:h-full object-cover"
+          fill
+          sizes="100vw"
+          placeholder="blur"
+          blurDataURL={blurData}
+          className="object-cover"
         />
       </div>
       <div
-        className={`flex-1 flex flex-col justify-center space-y-6 px-[30px] py-[30px] lg:rounded-3xl bg-secondary/10 ${
+        className={`flex flex-col justify-center space-y-6 px-[30px] py-[30px] lg:w-[600px] lg:rounded-3xl bg-secondary/10 ${
           id % 2 ? "lg:order-1" : "lg:order-2"
         }`}
       >

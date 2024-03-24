@@ -15,7 +15,7 @@ const Teams: React.FC = async () => {
           </h1>
           <p>We Are The Best Team</p>
         </div>
-        <div className="flex flex-col md:flex-row gap-10 lg:justify-center items-center mt-6 md:overflow-x-auto">
+        <div className="flex flex-col md:flex-row gap-10 lg:justify-center items-center mt-6 md:overflow-x-auto no-scrollbar">
           {ourTeam &&
             ourTeam.map((person, idx) => {
               const fullName = person.firstName + " " + person.lastName;
