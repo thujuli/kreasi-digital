@@ -24,6 +24,7 @@ const ProfileCard: React.FC<Props> = async (props) => {
           src={profilePicture}
           alt={name}
           fill
+          priority
           sizes="100vw"
           placeholder="blur"
           blurDataURL={blurData}
