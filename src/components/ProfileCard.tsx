@@ -46,16 +46,28 @@ const ProfileCard: React.FC<Props> = async (props) => {
           functionality of the entire application.
         </p>
         <div className="pt-2 lg:pt-0 flex gap-4 justify-center md:justify-start text-xl text-white">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            aria-label="Instagram"
+          >
             <FaInstagram />
           </a>
-          <a href="https://web.whatsapp.com/" target="_blank">
+          <a
+            href="https://web.whatsapp.com/"
+            target="_blank"
+            aria-label="Whatsapp"
+          >
             <FaWhatsapp />
           </a>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="Youtube"
+          >
             <FaYoutube />
           </a>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
             <FaTwitter />
           </a>
         </div>
